@@ -13,7 +13,10 @@ public class Calculadora extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new GridLayout(5, 2, 10, 10));
 
+<<<<<<< HEAD
         // Componentes
+=======
+>>>>>>> main
         campoNumero1 = new JTextField();
         campoNumero2 = new JTextField();
         rotuloResultado = new JLabel("Resultado: ");
@@ -23,7 +26,10 @@ public class Calculadora extends JFrame {
         botaoMultiplicacao = new JButton("×");
         botaoDivisao = new JButton("÷");
 
+<<<<<<< HEAD
         // Adiciona componentes à janela
+=======
+>>>>>>> main
         add(new JLabel("Número 1:"));
         add(campoNumero1);
         add(new JLabel("Número 2:"));
@@ -35,7 +41,10 @@ public class Calculadora extends JFrame {
         add(botaoDivisao);
         add(rotuloResultado);
 
+<<<<<<< HEAD
         // Ações dos botões
+=======
+>>>>>>> main
         botaoSoma.addActionListener(e -> realizarOperacao('+'));
         botaoSubtracao.addActionListener(e -> realizarOperacao('-'));
         botaoMultiplicacao.addActionListener(e -> realizarOperacao('*'));
@@ -51,6 +60,7 @@ public class Calculadora extends JFrame {
             double resultado;
 
             switch (operador) {
+<<<<<<< HEAD
                 case '+':
                     resultado = num1 + num2;
                     break;
@@ -64,6 +74,14 @@ public class Calculadora extends JFrame {
                     if (num2 == 0) {
                         throw new CalculadoraException("Divisão por zero não é permitida.");
                     }
+=======
+                case '+': resultado = num1 + num2; break;
+                case '-': resultado = num1 - num2; break;
+                case '*': resultado = num1 * num2; break;
+                case '/':
+                    if (num2 == 0)
+                        throw new CalculadoraException("Divisão por zero não é permitida.");
+>>>>>>> main
                     resultado = num1 / num2;
                     break;
                 default:
